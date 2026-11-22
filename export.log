@@ -1,0 +1,17 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1795304580.820963    7444 pjrt_api.cc:119] GetPjrtApi was found for TPU at /home/guanwang/.venv/lib/python3.12/site-packages/libtpu/libtpu.so
+[W1121 23:43:01.311643642 env_vars.h:456] Warning: //TorchTpu/ApiStage/ExperimentalApi// the TORCH_TPU_DEFER_AND_FUSE environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1795304581.893716    7444 device_rt.cc:178] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1795304581.895061    7444 libtpu_version.cc:63] Setting libtpu version to: 0.0.53.1
+[Export] 1. Loading base Gemma 4 E2B-IT model on cpu...
+[Gemma4-TorchTPU] Loaded 600 language_model tensors (skipped 1411 vision/audio tensors) -> moving to cpu...
+[Export] 2. Attaching trained PEFT LoRA adapter from checkpoints_tpu/step_500...
+[Export] 3. Running PEFT merge_and_unload()...
+[Export] Layer 0 q_proj max weight delta after LoRA merge: 0.000977
+[Export] 4. Saving merged safetensors to models/gemma-4-E2B-it-finetuned...
+[Gemma4-TorchTPU] Saved 600 tensors to models/gemma-4-E2B-it-finetuned/model.safetensors
+[Export] Export complete in 11.84s! Merged model is in models/gemma-4-E2B-it-finetuned

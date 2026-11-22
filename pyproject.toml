@@ -1,0 +1,19 @@
+[project]
+name = "torchtpu-gemma4-insurance"
+version = "0.1.0"
+description = "Fine-Tuning and Benchmarking Gemma 4 (E2B-IT) on InsuranceQA-v2 with Native PyTorch on Google Cloud TPUs (TorchTPU)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.13.0",
+    "datasets>=4.8.4",
+    "huggingface-hub>=0.36.2",
+    "matplotlib>=3.10.8",
+    "numpy>=2.2.0",
+    "peft>=0.15.0",
+    "safetensors>=0.5.3",
+    "tokenizers>=0.21.0",
+    "torch>=2.6.0",
+    "tqdm>=4.67.3",
+    "transformers>=4.50.0",
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "mode": "debug_eager",
+    "device": "tpu",
+    "hardware": "Cloud TPU v6e-1 (Trillium, 32GB HBM)",
+    "batch_size": 4,
+    "seq_len": 1024,
+    "warmup_compile_time_s": 18.1,
+    "median_step_time_ms": 4613.53,
+    "mean_step_time_ms": 4613.53,
+    "tokens_per_sec": 887.8,
+    "dynamic_shape_recompilations": 0,
+    "cache_stats": {
+      "num_cache_reqs": 201077,
+      "num_cache_hits": 200587,
+      "num_compilations": 474,
+      "num_unbounded_dynamic_hits": 0,
+      "cache_hit_rate_pct": 99.76
+    },
+    "speedup_vs_strict_eager": 0.26,
+    "speedup_vs_debug_eager": 1.0
+  },
+  {
+    "mode": "strict_eager",
+    "device": "tpu",
+    "hardware": "Cloud TPU v6e-1 (Trillium, 32GB HBM)",
+    "batch_size": 4,
+    "seq_len": 1024,
+    "warmup_compile_time_s": 3.15,
+    "median_step_time_ms": 1191.23,
+    "mean_step_time_ms": 1191.23,
+    "tokens_per_sec": 3438.5,
+    "dynamic_shape_recompilations": 0,
+    "cache_stats": {
+      "num_cache_reqs": 201077,
+      "num_cache_hits": 200587,
+      "num_compilations": 0,
+      "num_unbounded_dynamic_hits": 0,
+      "cache_hit_rate_pct": 99.76
+    },
+    "speedup_vs_strict_eager": 1.0,
+    "speedup_vs_debug_eager": 3.87
+  },
+  {
+    "mode": "defer_and_fuse",
+    "device": "tpu",
+    "hardware": "Cloud TPU v6e-1 (Trillium, 32GB HBM)",
+    "batch_size": 4,
+    "seq_len": 1024,
+    "warmup_compile_time_s": 42.78,
+    "median_step_time_ms": 568.64,
+    "mean_step_time_ms": 568.64,
+    "tokens_per_sec": 7203.2,
+    "dynamic_shape_recompilations": 0,
+    "cache_stats": {
+      "num_cache_reqs": 52638,
+      "num_cache_hits": 52256,
+      "num_compilations": 382,
+      "num_unbounded_dynamic_hits": 0,
+      "cache_hit_rate_pct": 99.27
+    },
+    "speedup_vs_strict_eager": 2.1,
+    "speedup_vs_debug_eager": 8.11
+  },
+  {
+    "mode": "compile",
+    "device": "tpu",
+    "hardware": "Cloud TPU v6e-1 (Trillium, 32GB HBM)",
+    "batch_size": 4,
+    "seq_len": 1024,
+    "warmup_compile_time_s": 144.88,
+    "median_step_time_ms": 286.61,
+    "mean_step_time_ms": 286.61,
+    "tokens_per_sec": 14291.3,
+    "dynamic_shape_recompilations": 0,
+    "cache_stats": {
+      "num_cache_reqs": 1942,
+      "num_cache_hits": 1886,
+      "num_compilations": 7,
+      "num_unbounded_dynamic_hits": 0,
+      "cache_hit_rate_pct": 97.12
+    },
+    "speedup_vs_strict_eager": 4.16,
+    "speedup_vs_debug_eager": 16.1
+  }
+]

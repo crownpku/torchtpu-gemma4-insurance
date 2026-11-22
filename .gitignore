@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Secrets & Cloud Configs
+.env
+.gcloud_config/
+.ssh/
+
+# Large Model Weights, Datasets & Archives (excluded from Git)
+data/
+models/
+checkpoints_dry_run/
+checkpoints_tpu/
+project_code.tar.gz
+*.safetensors
+
+# Dry-run scratch artifacts & OS metadata
+results/*_dry_run.json
+.DS_Store
+tmp/

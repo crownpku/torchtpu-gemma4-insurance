@@ -1,0 +1,95 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1795304146.923324    4837 pjrt_api.cc:119] GetPjrtApi was found for TPU at /home/guanwang/.venv/lib/python3.12/site-packages/libtpu/libtpu.so
+[W1121 23:35:49.915593002 env_vars.h:456] Warning: //TorchTpu/ApiStage/ExperimentalApi// the TORCH_TPU_DEFER_AND_FUSE environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1795304149.496913    4837 device_rt.cc:178] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1795304149.501608    4837 libtpu_version.cc:63] Setting libtpu version to: 0.0.53.1
+I0000 00:00:1795304152.493984    4837 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.117. The framework PJRT API version is 0.117.
+I0000 00:00:1795304153.714905    4837 pjrt_c_api_client.cc:188] PjRtCApiClient created.
+I0000 00:00:1795304156.417826    5069 compilation_cache_utils.cc:220] Tier-3 compilation cache root directory: /home/guanwang/.cache/torchtpu_pjrt_cache
+I0000 00:00:1795304156.417848    5069 tier2_compilation_cache.cc:73] Tier-2 compilation cache is enabled with name 'default' because tier-3 is enabled.
+I0000 00:00:1795304156.418813    5163 compilation_cache_utils.cc:101] Tier-2 cache uses TorchTPU binary fingerprint: be58cd7209a89904
+  based on TorchTPU binary version 6 and PjRt version:
+TFRT TPU v6 lite
+Built on Nov 17 2026 04:24:36 (1794918276) cl/1023598134
+C API version: 0.117
+I0000 00:00:1795304156.418956    5163 tier3_compilation_cache.cc:60] Tier-3 compilation cache path for this process: /home/guanwang/.cache/torchtpu_pjrt_cache/be58cd7209a89904
+[TorchTPU] Using device: tpu | Execution mode: defer_and_fuse
+[TorchTPU] Loading Gemma 4 E2B-IT from models/gemma-4-E2B-it...
+[Gemma4-TorchTPU] Loaded 600 language_model tensors (skipped 1411 vision/audio tensors) -> moving to tpu...
+[TorchTPU] Applying PEFT LoRA (r=16, alpha=32)...
+[TorchTPU] Trainable params: 25,337,856 || All params: 4,672,787,747 || Trainable%: 0.5422%
+[Hook] Eval at step 0: eval_loss = 4296.7616
+[Hook] Training started on TorchTPU.
+[Hook] Step 1/500: train_loss = 5.3066 (40973.0 ms/step)
+[Hook] Step 10/500: train_loss = 4.3185 (516.5 ms/step)
+[Hook] Step 20/500: train_loss = 3.1969 (519.3 ms/step)
+[Hook] Step 30/500: train_loss = 2.8049 (518.5 ms/step)
+[Hook] Step 40/500: train_loss = 2.8701 (517.4 ms/step)
+[Hook] Step 50/500: train_loss = 3.2375 (516.1 ms/step)
+[Hook] Eval at step 49: eval_loss = 2427.1721
+[Hook] Step 60/500: train_loss = 3.0726 (517.6 ms/step)
+[Hook] Step 70/500: train_loss = 3.1304 (520.6 ms/step)
+[Hook] Step 80/500: train_loss = 2.8234 (521.5 ms/step)
+[Hook] Step 90/500: train_loss = 2.7577 (519.1 ms/step)
+[Hook] Step 100/500: train_loss = 2.8387 (519.7 ms/step)
+[Hook] Eval at step 99: eval_loss = 2270.2041
+[Hook] Step 110/500: train_loss = 2.6931 (519.8 ms/step)
+[Hook] Step 120/500: train_loss = 2.2391 (517.6 ms/step)
+[Hook] Step 130/500: train_loss = 2.5134 (521.3 ms/step)
+[Hook] Step 140/500: train_loss = 3.2186 (520.8 ms/step)
+[Hook] Step 150/500: train_loss = 2.3611 (764.5 ms/step)
+[Hook] Eval at step 149: eval_loss = 2200.4072
+[Hook] Step 160/500: train_loss = 2.8099 (527.0 ms/step)
+[Hook] Step 170/500: train_loss = 2.6540 (525.6 ms/step)
+[Hook] Step 180/500: train_loss = 2.5297 (526.1 ms/step)
+[Hook] Step 190/500: train_loss = 2.7781 (523.2 ms/step)
+[Hook] Step 200/500: train_loss = 2.5195 (523.2 ms/step)
+[Hook] Eval at step 199: eval_loss = 2150.9633
+[Hook] Step 210/500: train_loss = 2.9158 (525.0 ms/step)
+[Hook] Step 220/500: train_loss = 2.3702 (525.7 ms/step)
+[Hook] Step 230/500: train_loss = 3.0108 (522.4 ms/step)
+[Hook] Step 240/500: train_loss = 2.3345 (523.6 ms/step)
+[Hook] Step 250/500: train_loss = 2.3835 (522.4 ms/step)
+[Hook] Eval at step 249: eval_loss = 2118.8318
+[Hook] Step 260/500: train_loss = 2.6488 (523.4 ms/step)
+[Hook] Step 270/500: train_loss = 2.6166 (523.8 ms/step)
+[Hook] Step 280/500: train_loss = 2.7271 (759.7 ms/step)
+[Hook] Step 290/500: train_loss = 2.9484 (524.4 ms/step)
+[Hook] Step 300/500: train_loss = 2.3810 (526.6 ms/step)
+[Hook] Eval at step 299: eval_loss = 2097.3199
+[Hook] Step 310/500: train_loss = 2.3497 (526.2 ms/step)
+[Hook] Step 320/500: train_loss = 2.3325 (523.8 ms/step)
+[Hook] Step 330/500: train_loss = 2.2461 (523.7 ms/step)
+[Hook] Step 340/500: train_loss = 2.7304 (523.8 ms/step)
+[Hook] Step 350/500: train_loss = 2.5746 (523.6 ms/step)
+[Hook] Eval at step 349: eval_loss = 2081.0706
+[Hook] Step 360/500: train_loss = 2.3800 (523.5 ms/step)
+[Hook] Step 370/500: train_loss = 2.4371 (523.0 ms/step)
+[Hook] Step 380/500: train_loss = 2.1982 (525.6 ms/step)
+[Hook] Step 390/500: train_loss = 2.8969 (528.2 ms/step)
+[Hook] Step 400/500: train_loss = 2.4233 (524.5 ms/step)
+[Hook] Eval at step 399: eval_loss = 2067.4155
+[Hook] Step 410/500: train_loss = 2.4986 (762.5 ms/step)
+[Hook] Step 420/500: train_loss = 2.2498 (523.4 ms/step)
+[Hook] Step 430/500: train_loss = 2.4402 (523.3 ms/step)
+[Hook] Step 440/500: train_loss = 2.8236 (524.8 ms/step)
+[Hook] Step 450/500: train_loss = 2.3466 (523.6 ms/step)
+[Hook] Eval at step 449: eval_loss = 2057.1615
+[Hook] Step 460/500: train_loss = 2.2534 (528.4 ms/step)
+[Hook] Step 470/500: train_loss = 2.2925 (525.5 ms/step)
+[Hook] Step 480/500: train_loss = 2.3827 (524.7 ms/step)
+[Hook] Step 490/500: train_loss = 2.1437 (530.0 ms/step)
+[Hook] Step 500/500: train_loss = 2.6498 (524.7 ms/step)
+[Hook] Eval at step 500: eval_loss = 2046.2732
+[Hook] Training completed. Metrics saved to results/metrics.json
+[TorchTPU] Saved trained PEFT LoRA adapter to checkpoints_tpu/step_500
+I0000 00:00:1795304576.949077    4837 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1795304576.949145    4837 compilation_cache.cc:211] CompilationCache final stats: num_cache_reqs=2343615
+num_cache_hits=2343213 {99.9%}
+num_compilations=402
+num_unbounded_dynamic_hits=0
+peak_compilation_memory_bytes=unknown

@@ -1,0 +1,142 @@
+[
+    {
+        "instruction": "Does Medicare Cover Co-Pays?",
+        "expected": "Original Medicare Part A & Medicare Part B does not cover co-pays , deductibles or coinsurance . In fact , it covers only about 80 % of your healthcare costs . The remaining 20 % is your responsibility and is limitless unless you have a Medicare Supplement Plan -LRB- Medigap Plan -RRB- . Depending on which Medicare Supplement Plan you have it can pay all or most of those costs . For more information about Medicare or to Compare Medicare Supplement Plans instantly online visit our website at SummitMedigap.com .",
+        "generated": "Medicare Part A and Part B do not cover co-pays . Medicare Part A does not cover co-pays . Medicare Part B does not cover co-pays . Medicare Part D does not cover co-pays .",
+        "num_output_tokens": 43,
+        "latency_s": 24.94
+    },
+    {
+        "instruction": "Does Auto Insurance Decrease At Age 25?",
+        "expected": "Auto insurance policies typically have a reduced rating classification for drivers at the renewal following their 25th birthday . This primarily adjusts the rating from a previously youthful class to an adult class , and usually comes out to be a slightly lower rate than before . Depending on the company , there are a few other ways to get adult classification , for example if you were married .",
+        "generated": "Auto insurance rates are based on the risk of the driver . At age 25 , you are considered a high risk driver . You will likely have to pay a higher rate than older drivers .",
+        "num_output_tokens": 39,
+        "latency_s": 2.355
+    },
+    {
+        "instruction": "Does Auto Insurance Decrease At Age 25?",
+        "expected": "Your auto insurance coverage certainly does n't decrease but the premium you pay for it usually will if you have a good driving record . When you reach age 25 and have not had tickets or accidents that resulted in insurance claims , you are considered less risk to the insurance company . They will usually lower your rate but even if they do , that is a great time to Reshop the rate with several other companies . You will usually see even more savings that way .",
+        "generated": "Auto insurance rates are based on the risk of the driver . At age 25 , you are considered a high risk driver . You will likely have to pay a higher rate than older drivers .",
+        "num_output_tokens": 39,
+        "latency_s": 2.325
+    },
+    {
+        "instruction": "Does Auto Insurance Decrease At Age 25?",
+        "expected": "In California age is not a rating factor . Experience is a rating factor . Some companies change rating factors every four years . Once the driver has eight years of experience he is charged the standard rate . If the driver has not had more than one point assessed they also receive a good driver discount that substantially alters the premium .",
+        "generated": "Auto insurance rates are based on the risk of the driver . At age 25 , you are considered a high risk driver . You will likely have to pay a higher rate than older drivers .",
+        "num_output_tokens": 39,
+        "latency_s": 2.326
+    },
+    {
+        "instruction": "Is Health Insurance Elastic Or Inelastic?",
+        "expected": "I believe that health insurance is neither elastic or inelastic . The amount of insurance most people purchase has little to do with the actual cost of the coverage . In most cases the person making the purchase decision is not the individual paying for the coverage . People can pay widely different amounts for the very same level of coverage . When the coverage is purchased through work the person 's employer is making a portion of the premium payments on behalf of the employee . Any remaining contribution is paid for by the employee using pretax payroll deductions . The IRS is then picking up a portion of the tab in the form of a tax subsidy . When individuals purchase coverage through a state exchange they may be eligible for premium and cost sharing subsidies . The subsidies are based upon the household 's income compared to the federal poverty level .",
+        "generated": "Health insurance is inelastic . The price of health insurance is not going to change much in the short run . If the price of health insurance were to change , the demand for health insurance would not change much .",
+        "num_output_tokens": 41,
+        "latency_s": 2.441
+    },
+    {
+        "instruction": "How Much More Is Life Insurance For Smokers?",
+        "expected": "Unfortunately , smokers or tobacco rates as it is known in life insurance is expensive . The average life insurance company will increase premiums 2 or 3 times that of a non-tobacco user with equal health risk . . Please keep in mind that you may receive tobacco rates for cigarettes , cigars , chewing tobacco or dip snuff , marijuana , vapor cigs , nicotine patches and nicotine gum . You need to be nicotine free for at least one year with most life insurance carriers in order to qualify for non-tobacco rates . There are a few carriers that will consider non-tobacco rates on a person that smokes an occasional cigar , usually less than 12 per year , but you still must be nicotine free when applying . Be sure to research those procedures .",
+        "generated": "Life insurance rates for smokers are generally 20% to 30% higher than non-smokers . The exact percentage will depend on the individual , the type of policy , and the carrier .",
+        "num_output_tokens": 42,
+        "latency_s": 3.511
+    },
+    {
+        "instruction": "How Much More Is Life Insurance For Smokers?",
+        "expected": "The rate for smokers is about three times that of nonsmokers . If getting No Exam insurance , the rates for a smoker and nonsmoker are not as far apart as that , but those rates usually start out higher for nonsmokers than with an exam . If there is a table rating or health condition which cigarettes compound the seriousness of the disease , the rates for a smoker can be even higher .",
+        "generated": "Life insurance rates for smokers are generally 20% to 30% higher than non-smokers . The exact percentage will depend on the individual , the type of policy , and the carrier .",
+        "num_output_tokens": 42,
+        "latency_s": 2.499
+    },
+    {
+        "instruction": "How Much More Is Life Insurance For Smokers?",
+        "expected": "Life insurance is a mortality product . Smoking cigarettes shortens mortality , so the exposure to the life insurance company is greater and that risk is passed in higher premiums . Depending upon your gender , age , health history and current medical condition , your premium could cost an average of 15-20 % more than non smokers .",
+        "generated": "Life insurance rates for smokers are generally 20% to 30% higher than non-smokers . The exact percentage will depend on the individual , the type of policy , and the carrier .",
+        "num_output_tokens": 42,
+        "latency_s": 2.493
+    },
+    {
+        "instruction": "Does Obamacare Offer Medigap Insurance?",
+        "expected": "No and luckily it is not needed . Medicare along with Medigap Insurance works great . Obamacare or the Affordable Care Act impacts folks under age 65 and not on Medicare . However , in the Affordable Care Act they did have cuts to Medicare but other than that it is not related . The cuts to Medicare are estimated to be $ 700 billion . Getting a Medigap Plan is fairly easy if you work with an independent agent that specializes in it . You pay a monthly premium and then you have little to no out of pocket costs for medical expenses . There is also no network with Medigap Plans which means you can go to any doctor or hospital you want . No need for a referral to see a specialist either . The biggest thing about Medigap Plans is the benefits are not allowed to change from year to year . The Affordable Care Act -LRB- Obamacare -RRB- plans are constantly changing .",
+        "generated": "Obamacare does not offer Medigap insurance . Medigap is a separate insurance product that is sold by a third party .",
+        "num_output_tokens": 26,
+        "latency_s": 1.568
+    },
+    {
+        "instruction": "Does Obamacare Offer Medigap Insurance?",
+        "expected": "No . You are making the mistake that many people are making in thinking that ObamaCare is an insurance plan , it is not . ObamaCare or the Patient Protection and Affordable Care Act -LRB- as that is its true title -RRB- is a massive law accompanied by an even more massive set of administrative guidelines that set new rules for how health insurance plans are offered , priced , structured . Plus it did create the online government health insurance marketplaces -LRB- e.g. - HealthCare.gov -RRB- as a supposedly simpler way for people to purchase individual health insurance and possibly receive subsidies for the cost of their health insurance . ObamaCare is in no way a government health insurance program such as Medicaid or Medicare .",
+        "generated": "Obamacare does not offer Medigap insurance . Medigap is a separate insurance product that is sold by a third party .",
+        "num_output_tokens": 26,
+        "latency_s": 1.565
+    },
+    {
+        "instruction": "What Is Spousal Life Insurance?",
+        "expected": "Spousal life insurance is n't a special type of policy . Life insurance on spouses is a fundamental planning matter . In dual income families , it is important for both earners to consider life insurance to protect the income they each depend on as the lost of one or both would likely result in financial hardship . In the event of a stay at home spouse life insurance should be considered as the loss of that spouse may have a financial impact through new expenses such as day care .",
+        "generated": "Spousal life insurance is a type of life insurance that is taken out by one spouse to protect the other spouse in case of the first spouse's death . It is a very common type of life insurance . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out",
+        "num_output_tokens": 128,
+        "latency_s": 49.101
+    },
+    {
+        "instruction": "What Is Spousal Life Insurance?",
+        "expected": "The death of a spouse is perhaps the most emotionally traumatic event which humans experience . What would you do if your spouse died unexpectedly ? In over 55 % of married-couple families today , both marriage partners work outside the home at least part time . -LRB- 1 -RRB- Often the financial requirements to run the household substantially exceed the income of either spouse alone . If an untimely death were to occur , the inability to meet financial obligations with the single remaining spouses income might require the hasty sale of assets or , even worse , a bank foreclosure on the family residence . Life insurance is an excellent means of providing money when it is needed in these traumatic moments . Some families are fortunate enough to allow either the mother or father to stay home with small children while the other earns sufficient cash to meet household and living expenses . It is obvious that the loss of a breadwinner would create a financial calamity . Couples should consider the potential cost of replacing the services of the spouse who stays at home to care for the children . Without the deceased spouse , a surviving spouse working outside the home would face new expenditures for child care , either in the home or at a babysitter or day care center as well as someone to take the children to the doctor , dentist , piano lessons , etc. . Perhaps the surviving parent could take time off work to fulfill these obligations , but this time off work would also amount to a financial loss . Most families can help effectively remove this potential financial emergency by acquiring a life insurance policy on each spouse . Source : Statistical Abstract of the United States : 2012 , Table 700 Married-Couple Families ; data from 2009 . Steve Savant is a contributor to Back Room Technician , an Advisys Company",
+        "generated": "Spousal life insurance is a type of life insurance that is taken out by one spouse to protect the other spouse in case of the first spouse's death . It is a very common type of life insurance . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out by the spouse who is the primary earner . The policy is usually taken out",
+        "num_output_tokens": 128,
+        "latency_s": 7.448
+    },
+    {
+        "instruction": "What Do Auto Insurance Agents Do?",
+        "expected": "Auto insurance agents are primarily tasked with the process of finding new clients for whom they can write insurance policies . Some auto insurance handle administrative duties like processing claims or policy changes , but this is very commonly shifted to support staff hired by the auto insurance agent so they can spend more time finding new clients .",
+        "generated": "Auto insurance agents are licensed to sell auto insurance policies . They can help you find the best coverage for your needs and budget . They can also help you with claims and other issues .",
+        "num_output_tokens": 36,
+        "latency_s": 2.149
+    },
+    {
+        "instruction": "What Factors Should Be Considered When Purchasing Long Term Care Insurance?",
+        "expected": "Purchasing long term care insurance is a process that has many steps . Of course your budget will play a big role in the policy you ultimately buy . The assets you have , and expect to have in the future is critical along with the liquidity of those assets . As I have mentioned many times in previous questions -LRB- I guess that 's why I am an `` expert '' -RRB- your medical history will play a role in determining when and how much to purchase . This includes family history and any hazardous sports and hobbies you may engage in . A full-time experienced broker that specializes in this type of policy is your best resource . They can shop , explain and research your options . Although many folks claim to be experts , the full-time experienced agent/broker is invaluable .",
+        "generated": "The most important factor is the type of long term care insurance you are purchasing . There are two types of long term care insurance . The first is the traditional long term care insurance . The second is the hybrid long term care insurance . The first type is a policy that pays for a specific amount of care . The second type is a policy that pays for a specific amount of care for a specific period of time . The first type is more expensive but the second type is more affordable . The first type is also more flexible . The second type is more rigid .",
+        "num_output_tokens": 111,
+        "latency_s": 6.5
+    },
+    {
+        "instruction": "What Factors Should Be Considered When Purchasing Long Term Care Insurance?",
+        "expected": "Here are some factors that should be considered when purchasing long term are insurance : Family health history , family longevity , convalescent care of parents and grandparents . If your family has a chronic history of medical problems , it could present a predisposition for you . If you have family longevity with parents or grandparents , you have a greater need for extended care based on living longer . Its fascinating to observe one familys chronic convalesces versus another familys occasional use of assisted home care . And keep in mind that seniors pay around $ 250,000 in medical bills during their retirement years , some of which are extended care expenditures .",
+        "generated": "The most important factor is the type of long term care insurance you are purchasing . There are two types of long term care insurance . The first is the traditional long term care insurance . The second is the hybrid long term care insurance . The first type is a policy that pays for a specific amount of care . The second type is a policy that pays for a specific amount of care for a specific period of time . The first type is more expensive but the second type is more affordable . The first type is also more flexible . The second type is more rigid .",
+        "num_output_tokens": 111,
+        "latency_s": 6.51
+    },
+    {
+        "instruction": "How Much Does Home Insurance Cost Per Month In West Virginia?",
+        "expected": "According to Home Insurance LLC , the average annual home owners insurance premium in West Virginia is $ 875 . Please keep in mind that his average assumes that you live in an average priced home with average risk factors . Additional assessment of your specific home and risk factors may increase or decrease your annual premium .",
+        "generated": "Home insurance rates in West Virginia vary depending on the type of home , the location , the age of the home , the construction , the number of rooms , the number of bedrooms , the number of bathrooms , the type of roof , the type of foundation , the type of windows , the type of doors , the type of heating , the type of cooling , the type of electrical system , the type of plumbing , the type of water heater , the type of furnace , the type of air conditioning , the type of water heater , the type of furnace , the type of air conditioning , the type of electrical system , the type of plumbing , the",
+        "num_output_tokens": 128,
+        "latency_s": 10.0
+    },
+    {
+        "instruction": "When Should You Get Renters Insurance?",
+        "expected": "You need renters insurance when you have something to loose . That something could be more than your stuff . It could be the reasonable rent you have . If there were a fire , and you had to leave for another apartment , you might have to pay more rent . LOSS OF USE is a coverage built in to the policy . If you have to leave your 2 bedroom , second floor apartment where you pay $ 500 a month because of a fire , you can move into a similar apartment and if that similar apartment cost more , LOSS OF USE will pay for the extra -LRB- above $ 500 -RRB- rent . It will not pay for you to move into a four bedroom penthouse apartment . That 's not similar . If a friend or someone else visits , goes to the bathroom and slips on the floor they could get injured ... badly . A renters policy includes two important coverages : MEDICAL PAYMENTS and BODILY INJURY LIABILITY . MEDICAL PAYMENTS would pay hospital or doctor expenses necessary to treat your friend . The limit is usually $ 1,000 but you can buy more and it 's cheap . If your friend gets a lawyer and sues you , BODILY INJURY LIABILIYT will pay for an attorney to defend you AND pay the damages if you lose . The limits generally start at $ 100,000 , but check the price for higher limits as it also is cheap . Finally , there is your stuff . Maybe it 's used and worn and you do n't think it 's worth a lot . But if you had to go out and buy EVERYTHING all over again , it would be expensive . You can buy insurance that will replace your old stuff with new stuff . You just have to make sure you have REPLACEMENT COST COVERAGE . REMEMBER : Insurance does not cover everything for every imaginable kind of claim . There are limits and exclusions . They are generally the same from company to company . Find an agent you can talk to and ask questions . Good Luck Kevin P. Foley , CPA , CPCU PFT&K Insurance Brokers 877-414-2031 WEBSITELINK",
+        "generated": "You should get renters insurance as soon as you move into your new place . It is a very inexpensive policy and it is a great way to protect your belongings .",
+        "num_output_tokens": 32,
+        "latency_s": 1.949
+    },
+    {
+        "instruction": "What Does Renters Insurance Not Cover?",
+        "expected": "A few of the exclusions under a typical renters insurance policy are : a. property covered by any scheduled insurance ; b. animals , insects , birds , fish , worms and bees ; c. motor vehicles including their parts and equipment ; d. motorized vehicles including their parts and equipment , except those vehicles currently operational and used to service the insured premises ; e. aircraft , including their tires , parts and equipment ; f. property of roomers and boarders who are not insureds ; g. trees , plants , shrubs and lawns ; They are covered under the Incidental Coverage of this form ; and h. farm personal property . Please read your policy completely to understand the coverage provided and any exclusions that there may be .",
+        "generated": "Renters insurance does not cover the loss of your personal property . It does not cover the loss of your personal property if it is stolen . It does not cover the loss of your personal property if it is damaged by fire . It does not cover the loss of your personal property if it is damaged by flood . It does not cover the loss of your personal property if it is damaged by theft . It does not cover the loss of your personal property if it is damaged by vandalism . It does not cover the loss of your personal property if it is damaged by fire . It does not cover the loss of your personal property if it is damaged by",
+        "num_output_tokens": 128,
+        "latency_s": 7.476
+    },
+    {
+        "instruction": "Will Getting Married Affect My Medicare?",
+        "expected": "No , Medicare is carried by the individual and will not be affected . The only way I know of that marriage would come into play would be to help a spouse receive Medicare benefits even though that spouse may not have the prerequisite employment time required . You may want to check with your Social Security office or Medicare regarding the rules in this regard .",
+        "generated": "Getting married will not affect your Medicare coverage . Medicare is based on your age , not your marital status . If you are married , you will be able to enroll in Medicare Part B at age 65 . If you are not married , you will be able to enroll in Medicare Part B at age 65 .",
+        "num_output_tokens": 64,
+        "latency_s": 3.781
+    },
+    {
+        "instruction": "Can You Take Out A Life Insurance Policy On A Stranger?",
+        "expected": "Being able to take life insurance out on a stranger puts people at risk for being the target of insurance fraud , such as money laundering or murder . Insurance companies have cracked down on this mightily by requiring that there is an insurable interest in order for someone to take out a policy on another , that the insured person gives their consent , and that agents report any suspicious activity in regard to fraud .",
+        "generated": "No , you cannot take out a life insurance policy on a stranger . Life insurance is a contract between the policyholder and the insurance company . The policyholder must be the person who is insured .",
+        "num_output_tokens": 39,
+        "latency_s": 2.322
+    }
+]
