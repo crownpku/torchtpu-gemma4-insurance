@@ -2,13 +2,18 @@
 
 This repository contains the complete, reproducible **Native PyTorch (`torch_tpu`)** workflow for fine-tuning and benchmarking **Google Gemma 4 (`google/gemma-4-E2B-it`)** on the **`deccan-ai/insuranceQA-v2`** dataset on **Google Cloud TPUs (`v6e-1` Trillium)**.
 
-It serves as a direct, apples-to-apples **PyTorch / TorchTPU** evolution of our previous JAX/Flax study ([`Tunix_Gemma4_TPU`](../Tunix_Gemma4_TPU/README.md)), built for the **Google Cloud TorchTPU Sprint (`#TorchTPUSprint`)**.
+It serves as a direct, apples-to-apples **PyTorch / TorchTPU** evolution of our previous JAX/Flax study ([`crownpku/tunix-gemma4-tpu`](https://github.com/crownpku/tunix-gemma4-tpu)), built for the **Google Cloud TorchTPU Sprint (`#TorchTPUSprint`)**.
+
+- **GitHub Repository:** [https://github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance)
+- **Previous JAX/Tunix Baseline Repo:** [https://github.com/crownpku/tunix-gemma4-tpu](https://github.com/crownpku/tunix-gemma4-tpu)
+- **Technical Analysis Report:** [`analysis_results.md`](analysis_results.md)
+- **Developer Blog Post:** [`blog/torchtpu-gemma4-insurance.md`](blog/torchtpu-gemma4-insurance.md)
 
 ---
 
 ## 📊 Why Port from Tunix (JAX/Flax) to Native TorchTPU?
 
-In our original [`Tunix_Gemma4_TPU`](../Tunix_Gemma4_TPU/README.md) project, we fine-tuned **Gemma 4 E2B-IT** (2.3B active parameters, 5.1B total parameters including a 4.7 GB Per-Layer Embedding table) on `deccan-ai/insuranceQA-v2` using **Tunix (JAX/Flax/NNX)** and **Qwix LoRA**. While JAX delivered strong convergence (`5.2975 -> 2.6825` training loss), it required significant framework-specific workarounds:
+In our original [`tunix-gemma4-tpu`](https://github.com/crownpku/tunix-gemma4-tpu) project, we fine-tuned **Gemma 4 E2B-IT** (2.3B active parameters, 5.1B total parameters including a 4.7 GB Per-Layer Embedding table) on `deccan-ai/insuranceQA-v2` using **Tunix (JAX/Flax/NNX)** and **Qwix LoRA**. While JAX delivered strong convergence (`5.2975 -> 2.6825` training loss), it required significant framework-specific workarounds:
 1. Custom 4D attention mask broadcasting and position builders (`make_causal_attn_mask`, `build_positions_from_mask`).
 2. A 154-line custom NNX graph extractor (`export_model.py`) to manually split fused `kv_einsum` tensors back into Hugging Face `k_proj` / `v_proj` weights and transpose 2D kernels.
 3. Custom token-by-token CPU loops when JAX `Sampler` JIT tracing hit state-mutation walls.

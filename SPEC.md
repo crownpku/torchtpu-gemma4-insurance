@@ -1,9 +1,9 @@
 # `SPEC.md` — Technical Specification: `TorchTPU-Gemma4-Insurance`
 
-> **Project Goal:** Re-implement and benchmark our [`Tunix_Gemma4_TPU`](../Tunix_Gemma4_TPU/README.md) project—fine-tuning **Google Gemma 4 (`google/gemma-4-E2B-it`)** on the **`deccan-ai/insuranceQA-v2`** dataset on Google Cloud TPUs—replacing **Tunix (JAX/Flax/Qwix)** with **Native PyTorch on TPU (`TorchTPU` / `torch_tpu` + Hugging Face `Transformers v5` + `PEFT`)**.
+> **Project Goal:** Re-implement and benchmark our [`crownpku/tunix-gemma4-tpu`](https://github.com/crownpku/tunix-gemma4-tpu) project—fine-tuning **Google Gemma 4 (`google/gemma-4-E2B-it`)** on the **`deccan-ai/insuranceQA-v2`** dataset on Google Cloud TPUs—replacing **Tunix (JAX/Flax/Qwix)** with **Native PyTorch on TPU (`TorchTPU` / `torch_tpu` + Hugging Face `PEFT`)**.
 > **Target Hardware:** Google Cloud TPU (`v6e-1` Trillium 32 GB HBM or `v5litepod-4` / `v5e-1` 16 GB HBM)
 > **Target Stack:** Python 3.12 (via `uv`), PyTorch (`torch >= 2.6`), `torch_tpu >= 0.2.0`, Hugging Face `transformers >= 5.0` (`Gemma4ForCausalLM`, `device_map="tpu"`), `peft` (`LoraConfig`), `torch.profiler` / `XProf`
-> **Target Repository:** `https://github.com/crownpku/torchtpu-gemma4-insurance`
+> **Target Repository:** [https://github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance)
 
 ---
 

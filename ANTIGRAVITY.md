@@ -1,8 +1,8 @@
 # ANTIGRAVITY.md
 
 ## Project Context
-- **Repository**: TorchTPU Gemma 4 Insurance Domain Adaptation (`TorchTPU_sprint`)
-- **Predecessor Baseline**: [`Tunix_Gemma4_TPU`](../Tunix_Gemma4_TPU/README.md) (JAX/Flax/Tunix implementation)
+- **Repository**: [https://github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance) (`TorchTPU_sprint`)
+- **Predecessor Baseline**: [`crownpku/tunix-gemma4-tpu`](https://github.com/crownpku/tunix-gemma4-tpu) (`Tunix_Gemma4_TPU` JAX/Flax/Tunix implementation)
 - **Stack**: Native PyTorch (`torch`) + `torch_tpu` (TorchTPU) + Hugging Face `transformers >= 5.0` (`Gemma4ForCausalLM`) + `peft` (LoRA) + Python 3.12 (managed via `uv`)
 - **Model**: `google/gemma-4-E2B-it` (5.1B total parameters including the ~4.7 GB Per-Layer Embedding table; 2.3B active compute parameters; 128k context window)
 - **Dataset**: `deccan-ai/insuranceQA-v2` on Hugging Face (`21.3k` train, `3.35k` validation, `3.31k` test prompt-response pairs)

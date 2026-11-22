@@ -1,6 +1,9 @@
 # Gemma 4 Insurance Domain Fine-Tuning on TorchTPU: Comparative Technical Analysis Report
 
-This technical report presents a comprehensive quantitative and qualitative evaluation of our **Native PyTorch (`TorchTPU` / `torch_tpu`)** domain adaptation pipeline for **Google Gemma 4 (`google/gemma-4-E2B-it`)** on the **`deccan-ai/insuranceQA-v2`** dataset, alongside a direct apples-to-apples comparison against both the **Baseline `google/gemma-4-E2B-it`** model and our previous **Tunix (JAX/Flax/NNX)** implementation ([`Tunix_Gemma4_TPU`](../Tunix_Gemma4_TPU/analysis_results.md)).
+- **GitHub Repository:** [https://github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance)
+- **Companion JAX/Tunix Baseline Repository:** [https://github.com/crownpku/tunix-gemma4-tpu](https://github.com/crownpku/tunix-gemma4-tpu)
+
+This technical report presents a comprehensive quantitative and qualitative evaluation of our **Native PyTorch (`TorchTPU` / `torch_tpu`)** domain adaptation pipeline for **Google Gemma 4 (`google/gemma-4-E2B-it`)** on the **`deccan-ai/insuranceQA-v2`** dataset, alongside a direct apples-to-apples comparison against both the **Baseline `google/gemma-4-E2B-it`** model and our previous **Tunix (JAX/Flax/NNX)** implementation ([`crownpku/tunix-gemma4-tpu`](https://github.com/crownpku/tunix-gemma4-tpu/blob/main/analysis_results.md)).
 
 ---
 

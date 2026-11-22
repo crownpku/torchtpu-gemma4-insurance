@@ -1,8 +1,10 @@
 # From Tunix (JAX) to Native TorchTPU: Fine-Tuning Gemma 4 E2B-IT into an Insurance Expert with PyTorch on Google Cloud TPUs
 
 **By Guan Wang (`crownpku`)**
+- **GitHub Repository (TorchTPU / PyTorch):** [github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance)
+- **Predecessor Repository (Tunix / JAX):** [github.com/crownpku/tunix-gemma4-tpu](https://github.com/crownpku/tunix-gemma4-tpu)
 
-In my [previous deep dive](../Tunix_Gemma4_TPU/blog/fine-tuning-gemma4-insurance.md), I shared the journey of fine-tuning Google's **Gemma 4 E2B-IT** (5.1B total parameters, 2.3B active compute parameters) on the **`deccan-ai/insuranceQA-v2`** dataset using **Tunix (JAX/Flax/NNX)** on a Google Cloud TPU pod. While we achieved a 51.4% drop in validation loss and transformed the model from a verbose academic generalist into a concise insurance advisor, getting there in JAX required navigating custom 4D attention mask broadcasting, manual NNX graph surgery to split `kv_einsum` LoRA weights during export, and 16 GB HBM memory walls triggered by Gemma 4's massive 4.7 GB Per-Layer Embedding (PLE) table.
+In my [previous deep dive](https://github.com/crownpku/tunix-gemma4-tpu/blob/main/blog/fine-tuning-gemma4-insurance.md), I shared the journey of fine-tuning Google's **Gemma 4 E2B-IT** (5.1B total parameters, 2.3B active compute parameters) on the **`deccan-ai/insuranceQA-v2`** dataset using **Tunix (JAX/Flax/NNX)** on a Google Cloud TPU pod. While we achieved a 51.4% drop in validation loss and transformed the model from a verbose academic generalist into a concise insurance advisor, getting there in JAX required navigating custom 4D attention mask broadcasting, manual NNX graph surgery to split `kv_einsum` LoRA weights during export, and 16 GB HBM memory walls triggered by Gemma 4's massive 4.7 GB Per-Layer Embedding (PLE) table.
 
 For the **#TorchTPUSprint**, I asked a direct engineering question:
 > **What happens when we re-implement the exact same Gemma 4 E2B-IT insurance fine-tuning and evaluation pipeline using Google & Meta's new Native PyTorch backend—`TorchTPU` (`torch_tpu` + `libtpu 0.0.53.1`, PjRt API v0.117)—and Hugging Face `PEFT` on a single Cloud TPU `v6e-1` (Trillium) chip?**
@@ -170,4 +172,4 @@ Evaluating the merged checkpoint on 20 held-out `InsuranceQA-v2` test questions 
 3. **Mind Ecosystem Boundaries (`safetensors` + `PEFT`):** When using `PrivateUse1` backends like `torch_tpu` with Hugging Face `peft`, passing `torch_device="cpu"` during `PeftModel.from_pretrained()` cleanly avoids Rust `safetensors`'s device-name validation while keeping weight merging fast (`11.84s`) and PLE-safe.
 
 ---
-*Explore the full open-source implementation, logs, and benchmark suite in this repository.*
+*Explore the full open-source implementation, logs, and benchmark suite at: [https://github.com/crownpku/torchtpu-gemma4-insurance](https://github.com/crownpku/torchtpu-gemma4-insurance) (and the companion JAX/Tunix baseline at [https://github.com/crownpku/tunix-gemma4-tpu](https://github.com/crownpku/tunix-gemma4-tpu)).*
